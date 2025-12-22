@@ -1,4 +1,4 @@
-import animalVideo from "../assets/whiteTiger.mp4";
+import animalVideo from "../assets/animal.mp4";
 
 function Home() {
   return (
