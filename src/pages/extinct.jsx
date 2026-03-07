@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 import extinctvid2 from "../assets/extinctvid2.mp4";
-import extinctData from "../data/ExtinctData";
+import extinctData from "../data/extinctData";
 import SlideUpInfo from "../components/SlideUpInfo";
 import SpeciesListSidebar from "../components/SpeciesListSidebar";
 

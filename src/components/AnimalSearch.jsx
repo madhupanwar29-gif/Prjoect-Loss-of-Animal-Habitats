@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import extinctData from "../data/ExtinctData";
+import extinctData from "../data/extinctData";
 import endangeredData from "../data/endangeredData";
 
 export default function AnimalSpecies() {

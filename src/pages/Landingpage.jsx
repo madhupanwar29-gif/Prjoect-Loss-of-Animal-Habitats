@@ -1,28 +1,25 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Landing = () => {
   const navigate = useNavigate();
-  const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
-    // Automatically start the 'window slide' animation after 2 seconds
+    // Navigate after the entry animation has played (1s) + brief pause
     const timer = setTimeout(() => {
-      setIsExiting(true);
-      setTimeout(() => {
-        navigate("/home");
-      }, 1000); // Navigate after animation completes
-    }, 2000);
+      navigate("/home");
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
     <motion.div 
-      initial={{ y: 0 }}
-      animate={isExiting ? { y: "-100vh" } : { y: 0 }}
-      transition={{ duration: 1.2, ease: [0.7, 0, 0.3, 1] }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       className="h-screen w-screen overflow-hidden relative bg-black flex items-center justify-center z-50"
     >
       {/* Background Video */}

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import extinctData from "../data/ExtinctData";
+import extinctData from "../data/extinctData";
 import endangeredData from "../data/endangeredData";
 
 function AnimalCard({ animal, index }) {

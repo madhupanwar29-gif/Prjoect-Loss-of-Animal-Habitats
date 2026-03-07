@@ -5,10 +5,14 @@ const threatsData = [
     id: 1,
     title: "Habitat Destruction",
     subtitle: "Forests and natural areas cleared for farming, cities, and industry",
+    severity: "Critical",
+    category: "Habitat",
+    impactLevel: 10,
+    affectedSpecies: "Over 85% of threatened species impacted",
+    stat: "3.6 million hectares of forest lost every year",
     image:
       "https://www.nrdc.org/sites/default/files/styles/huge_16x9_100/public/2024-11/matt-palmer-K5KmnZHv1Pg-unsplash.jpg.jpg?h=2cb23ff7&itok=gwyl4tJ6",
 
-    // ✅ NEW (Only Added This)
     extraImages: [
       "https://images.pexels.com/photos/3551209/pexels-photo-3551209.jpeg",
     ],
@@ -44,6 +48,11 @@ const threatsData = [
     id: 2,
     title: "Hunting & Poaching",
     subtitle: "Illegal killing for meat, skins, horns, tusks, and wildlife trade",
+    severity: "Critical",
+    category: "Wildlife Trade",
+    impactLevel: 9,
+    affectedSpecies: "Over 1,000 species illegally traded worldwide",
+    stat: "$23 billion illegal wildlife trade annually — 4th largest crime globally",
     image:
       "https://www.treehugger.com/thmb/-QkJEhZFWL4GNKnJNXZLWg3Dfec=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-rhino-ceratotherium-sim-horns-with-game-ranger-hluhluwe-umfolozi-park-kwazulu-natal-provin-92154017-589791005f9b5874ee48d4b7.jpg",
 
@@ -83,6 +92,11 @@ const threatsData = [
     id: 3,
     title: "Pollution",
     subtitle: "Plastic, chemicals, waste, and smoke contaminate habitats",
+    severity: "High",
+    category: "Pollution",
+    impactLevel: 8,
+    affectedSpecies: "100,000+ marine animals killed by plastic annually",
+    stat: "8 million tons of plastic enter our oceans every single year",
     image:
       "https://images.pexels.com/photos/50700/styggkarret-reserve-burning-fire-50700.jpeg",
 
@@ -123,6 +137,11 @@ const threatsData = [
     id: 4,
     title: "Climate Change",
     subtitle: "Rising temperature, droughts, floods, and melting ice reshape habitats",
+    severity: "Critical",
+    category: "Climate",
+    impactLevel: 9,
+    affectedSpecies: "1 in 6 species at risk from climate change",
+    stat: "Global temperatures up 1.2°C since pre-industrial era — coral reefs at tipping point",
     image:
       "https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg",
 
@@ -160,6 +179,11 @@ const threatsData = [
     id: 5,
     title: "Urbanization",
     subtitle: "Cities fragment habitats and block wildlife movement",
+    severity: "High",
+    category: "Habitat",
+    impactLevel: 7,
+    affectedSpecies: "Over 500 species directly threatened by urban expansion",
+    stat: "68% of the global population expected in cities by 2050",
     image:
       "https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1600&q=80",
 
@@ -196,6 +220,11 @@ const threatsData = [
     id: 6,
     title: "Overexploitation of Natural Resources",
     subtitle: "Taking resources faster than nature replaces them",
+    severity: "High",
+    category: "Resource Use",
+    impactLevel: 8,
+    affectedSpecies: "33% of fish stocks globally are overexploited",
+    stat: "We use 1.75 Earths worth of resources every year — unsustainable",
     image:
       "https://images.pexels.com/photos/6038224/pexels-photo-6038224.jpeg",
 
