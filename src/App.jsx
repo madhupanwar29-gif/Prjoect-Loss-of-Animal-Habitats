@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       {showNavbar && <Navbar />}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />

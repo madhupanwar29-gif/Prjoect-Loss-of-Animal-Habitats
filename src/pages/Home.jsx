@@ -6,7 +6,12 @@ import AnimalVoices from "../components/AnimalVoices";
 
 function Home() {
   return (
-    <div className="w-screen overflow-x-hidden text-white">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="w-screen overflow-x-hidden text-white"
+    >
 
       {/* HERO SECTION */}
       <section className="relative flex flex-col items-center justify-center h-screen text-center px-6 overflow-hidden">
@@ -199,7 +204,7 @@ function Home() {
 
       </section>
 
-    </div>
+    </motion.div>
   );
 }
 
