@@ -51,7 +51,7 @@ export default function Navbar() {
   // Window scroll — handles progress bar AND show/hide
   useEffect(() => {
     const onScroll = () => {
-      // update progress bar
+      // update progress
       const el  = document.documentElement;
       const max = el.scrollHeight - el.clientHeight;
       if (max > 0) setProgress(window.scrollY / max);
@@ -118,21 +118,11 @@ export default function Navbar() {
           style={{ background: "linear-gradient(90deg, #c9a84c, #e8d87f, #8fad58)" }}
         />
 
-        {/* Scroll progress bar */}
-        <motion.div
-          className="absolute bottom-0 left-0 right-0 h-[1.5px] origin-left opacity-60"
-          style={{
-            scaleX: progress,
-            background: "linear-gradient(90deg, #c9a84c, #e8d87f, #8fad58)",
-          }}
-        />
-
         <div className="max-w-[1360px] mx-auto px-8 h-[70px] flex items-center justify-between gap-6">
 
           {/* ── Logo ─────────────────────────────────────────── */}
           <NavLink to="/home" className="flex items-center gap-3 shrink-0 no-underline">
 
-            {/* leaf emoji in a soft circle — no Lucide needed */}
             <div
               className="w-9 h-9 rounded-full flex items-center justify-center text-base shrink-0"
               style={{
